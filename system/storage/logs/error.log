@@ -20,3 +20,4 @@ Trace:
 #9 C:\xampp\htdocs\system\engine\front.php(29): Front->execute(Object(Action))
 #10 C:\xampp\htdocs\index.php(275): Front->dispatch(Object(Action), Object(Action))
 #11 {main}
+2018-01-05 23:25:04 - PHP Notice:  Undefined variable: sociallogin in C:\xampp\htdocs\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 46

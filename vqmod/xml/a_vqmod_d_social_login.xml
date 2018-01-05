@@ -11,5 +11,21 @@
 			<add><![CDATA[$this->db->query("DELETE FROM " . DB_PREFIX . "customer_authentication WHERE customer_id = '" . (int)$customer_id . "'"); //vqmod_d_social_login.xml]]></add>
 		</operation>
 	</file>
+	<file name="catalog/controller/common/header.php">
+		<operation error="skip" info="adding social links to header">
+			<search position="after"><![CDATA[$data['cart'] = $this->load->controller('common/cart');]]></search>
+			<add><![CDATA[$data['sociallogin'] = $this->load->controller('module/d_social_login');]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/common/header.tpl">
+		<operation error="skip" info="adding social links to header">
+			<search position="after"><![CDATA[<?php echo $language; ?>]]></search>
+			<add><![CDATA[
+				<div class="pull-left">
+					<?php echo $sociallogin; ?>
+				</div>
+				]]></add>
+		</operation>
+	</file>
 
 </modification>
