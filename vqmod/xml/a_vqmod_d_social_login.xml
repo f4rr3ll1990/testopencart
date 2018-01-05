@@ -21,7 +21,7 @@
 		<operation error="skip" info="adding social links to header">
 			<search position="after"><![CDATA[<?php echo $language; ?>]]></search>
 			<add><![CDATA[
-				<div class="pull-left">
+				<div class="pull-left social-login-wrapper">
 					<?php echo $sociallogin; ?>
 				</div>
 				]]></add>
