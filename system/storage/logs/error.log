@@ -21,3 +21,20 @@ Trace:
 #10 C:\xampp\htdocs\index.php(275): Front->dispatch(Object(Action), Object(Action))
 #11 {main}
 2018-01-05 23:25:04 - PHP Notice:  Undefined variable: sociallogin in C:\xampp\htdocs\vqmod\vqcache\vq2-catalog_view_theme_default_template_common_header.tpl on line 46
+2018-01-05 23:47:39 - Missing provider application credentials.
+
+HybridAuth Error: Your application id and secret are required in order to connect to Google.
+
+Trace:
+ #0 C:\xampp\htdocs\system\library\Hybrid\Providers\Google.php(28): Hybrid_Provider_Model_OAuth2->initialize()
+#1 C:\xampp\htdocs\system\library\Hybrid\Provider_Model.php(90): Hybrid_Providers_Google->initialize()
+#2 C:\xampp\htdocs\system\library\Hybrid\Provider_Adapter.php(101): Hybrid_Provider_Model->__construct('Google', Array, Array)
+#3 C:\xampp\htdocs\system\library\Hybrid\Auth.php(277): Hybrid_Provider_Adapter->factory('Google', Array)
+#4 C:\xampp\htdocs\system\library\Hybrid\Auth.php(229): Hybrid_Auth::setup('Google', NULL)
+#5 C:\xampp\htdocs\catalog\controller\module\d_social_login.php(103): Hybrid_Auth::authenticate('Google')
+#6 [internal function]: ControllerModuleDSocialLogin->login(Array)
+#7 C:\xampp\htdocs\vqmod\vqcache\vq2-system_storage_modification_system_engine_action.php(46): call_user_func(Array, Array)
+#8 C:\xampp\htdocs\system\engine\front.php(34): Action->execute(Object(Registry))
+#9 C:\xampp\htdocs\system\engine\front.php(29): Front->execute(Object(Action))
+#10 C:\xampp\htdocs\index.php(275): Front->dispatch(Object(Action), Object(Action))
+#11 {main}

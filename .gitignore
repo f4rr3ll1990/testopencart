@@ -2,5 +2,6 @@ config.php
 admin/config.php
 system/logs
 system/storage/cache
+vqmod/logs
 vqmod/vqcache
 image

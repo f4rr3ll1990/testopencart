@@ -36,6 +36,10 @@
 <?php foreach ($analytics as $analytic) { ?>
 <?php echo $analytic; ?>
 <?php } ?>
+
+				<link href="catalog/view/theme/default/stylesheet/d_social_login/styles.css" rel="stylesheet">
+				<script src="catalog/view/javascript/d_social_login/spin.min.js" type="text/javascript"></script>
+				
 </head>
 <body class="<?php echo $class; ?>">
 <nav id="top">
@@ -43,7 +47,7 @@
     <?php echo $currency; ?>
     <?php echo $language; ?>
 
-				<div class="pull-left">
+				<div class="pull-left social-login">
 					<?php echo $sociallogin; ?>
 				</div>
 				

@@ -141,7 +141,11 @@ class ControllerCommonHeader extends Controller {
 		$data['currency'] = $this->load->controller('common/currency');
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
-$data['sociallogin'] = $this->load->controller('module/d_social_login');
+
+				$data['sociallogin'] = $this->load->controller('module/d_social_login');
+				$this->document->addStyle('catalog/view/theme/default/stylesheet/d_social_login/styles.css');
+        		$this->document->addScript('catalog/view/javascript/d_social_login/spin.min.js');
+				
 
 		// For page specific css
 		if (isset($this->request->get['route'])) {

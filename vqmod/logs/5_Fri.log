@@ -77,3 +77,29 @@ VQModObject::parseMods - Could not resolve path for [admin/model/sale/customer.p
 ----------------------------------------------------------------------
 
 
+---------- Date: 2018-01-05 23:47:11 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=design/layout&token=amdxw5v2KXZ1l7u9E0UQXltaL6PGb1ld
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\vqmod/xml/a_vqmod_d_social_login.xml
+   id        : d_social_login
+   version   : 2.x
+   vqmver    : 2.5.0
+   author    : dreamvention.com
+VQModObject::parseMods - Could not resolve path for [admin/model/sale/customer.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-01-05 23:57:33 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : C:\xampp\htdocs\vqmod/xml/a_vqmod_d_social_login.xml
+   id        : d_social_login
+   version   : 2.x
+   vqmver    : 2.5.0
+   author    : dreamvention.com
+VQModObject::parseMods - Could not resolve path for [admin/model/sale/customer.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
